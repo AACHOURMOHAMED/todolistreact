@@ -1,0 +1,25 @@
+
+.Todo-Form{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.Input_Form{
+    width: 60%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: rgb(244, 244, 244);
+    border: 1px solid rgba(128, 128, 128, 0.4);
+}
+
+
+.Btn_Form{
+    background-color: rgb(26, 200, 234);
+    border: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    color: white;
+}
