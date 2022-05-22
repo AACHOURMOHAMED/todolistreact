@@ -2,7 +2,7 @@ import React from 'react'
 import TodoForm from './TodoForm'
 import TodoList from './TodoList'
 import './Todo.css'
-const Todo = () => {
+const Todo = (props) => {
 
   const todoSaveHandler = (prevData) => {
     const todoData = {
@@ -10,13 +10,18 @@ const Todo = () => {
       id : Math.random().toString()
     }
     console.log(todoData)
+    props.onAddTodo(todoData)
   }
 
 
   return (
     <div className='Todo-container'>
         <TodoForm onSaveTodo={todoSaveHandler} />
-        <TodoList/>
+        {props.items.map((data) =>
+        <TodoList 
+         key={data.id}
+        text={data.text}/>
+        )}
     </div>
   )
 }

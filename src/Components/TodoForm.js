@@ -16,6 +16,7 @@ const TodoForm = (props) => {
     console.log(todoData)
     setEnteredText('')
     props.onSaveTodo(todoData)
+    
   }
   return (
     
