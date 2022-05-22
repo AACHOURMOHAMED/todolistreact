@@ -16,3 +16,5 @@ const DUMMY_DATA = [
         text:'Task 4'
     }
 ]
+
+export default DUMMY_DATA;
